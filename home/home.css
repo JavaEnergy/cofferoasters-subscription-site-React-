@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500;700&family=Fraunces:opsz,wght@9..144,900&display=swap");
+
+.first {
+  background-image: url(../src/assets/home/mobile/image-hero-coffeepress.jpg);
+  font-family: Fraunces;
+  font-weight: 900;
+  line-height: 40px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-size: cover;
+  margin: 40px 24px 120px;
+  border-radius: 8px;
+}
+.first h1 {
+  font-size: 40px;
+  width: 280px;
+  color: #fefcf7;
+  padding: 100px 0 24px;
+}
+.first p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #fefcf7;
+  width: 280px;
+  opacity: 80%;
+}
+.btn {
+  padding: 39px 0 100px;
+}
+.box img {
+  width: 200px;
+  height: 151px;
+  margin-bottom: 24px;
+}
+
+.box h2 {
+  font-family: Fraunces;
+  font-size: 24px;
+  font-weight: 900;
+  color: #333d4b;
+}
+
+.box p {
+  font-family: Barlow;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #333d4b;
+  width: 320px;
+  margin: 16px 0 48px;
+  text-align: center;
+}
+
+.box-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.second h1 {
+  text-align: center;
+  background: linear-gradient(180deg, #fefcf7 0.01%, #fefcf7 100%);
+  font-size: 40px;
+  margin-bottom: 13px;
+}

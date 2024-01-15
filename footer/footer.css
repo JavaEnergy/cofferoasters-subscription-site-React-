@@ -1,0 +1,26 @@
+footer {
+  background: #2c343e;
+  text-align: center;
+}
+
+.nav-bar-footer {
+  color: #83888f;
+  font-family: Barlow;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.9230769276618958px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.image {
+  padding: 50px 0;
+}
+
+.soc-media {
+  padding: 50px 0;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}

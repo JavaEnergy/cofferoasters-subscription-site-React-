@@ -1,0 +1,14 @@
+.nav-bar {
+  display: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 32px 24px;
+}
+
+.nav {
+  cursor: pointer;
+}

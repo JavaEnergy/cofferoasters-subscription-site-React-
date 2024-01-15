@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500;700&family=Fraunces:opsz,wght@9..144,900&display=swap");
+
+.about-first {
+  background-image: url(../src/assets/about/mobile/image-hero-whitecup.jpg);
+  font-family: Fraunces;
+  font-weight: 900;
+  line-height: 40px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-size: cover;
+  margin: 40px 24px 120px;
+  border-radius: 8px;
+}
+.about-first h1 {
+  font-size: 28px;
+  color: #fefcf7;
+  padding: 100px 0 24px;
+}
+
+.about-first p {
+  font-family: Barlow;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #fefcf7;
+  opacity: 80%;
+  padding: 0 24px 87px;
+}
+
+.about-second {
+  margin: 0 24px;
+}
+
+.about-second img {
+  width: 100%;
+  border-radius: 8px;
+}
+.text-commitment {
+  color: #333d4b;
+  text-align: center;
+  padding-top: 48px;
+}
+
+.text-commitment h1 {
+  font-family: Fraunces;
+  font-size: 32px;
+  font-weight: 900;
+  line-height: 48px;
+}
+
+.text-commitment p {
+  font-family: Barlow;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  opacity: 80%;
+  padding: 30px 0 120px;
+}
