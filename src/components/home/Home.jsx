@@ -1,10 +1,10 @@
 import "./home.css";
-import "../src/reset.css";
+import "../../reset.css";
 import Button from "../button/Button";
-import imageEsp from "../src/assets/home/desktop/image-gran-espresso.png";
-import imagePlanalto from "../src/assets/home/desktop/image-planalto.png";
-import imagePicollo from "../src/assets/home/desktop/image-piccollo.png";
-import imagedanche from "../src/assets/home/desktop/image-danche.png";
+import imageEsp from "../../assets/home/desktop/image-gran-espresso.png";
+import imagePlanalto from "../../assets/home/desktop/image-planalto.png";
+import imagePicollo from "../../assets/home/desktop/image-piccollo.png";
+import imagedanche from "../../assets/home/desktop/image-danche.png";
 
 function Home() {
   return (
@@ -17,7 +17,7 @@ function Home() {
           your door, at your schedule.
         </p>
         <div className="btn">
-          <Button />{" "}
+          <Button />
         </div>
       </section>
       <section className="second">

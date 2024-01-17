@@ -1,5 +1,5 @@
 import "./button.css";
-import "../src/reset.css";
+import "../../reset.css";
 
 function Button() {
   return (

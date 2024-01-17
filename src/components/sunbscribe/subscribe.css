@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500;700&family=Fraunces:opsz,wght@9..144,900&display=swap");
+
+.subscribe-first {
+  background-image: url(../src/assets/plan/mobile/image-hero-blackcup.jpg);
+  font-family: Fraunces;
+  font-weight: 900;
+  line-height: 40px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  background-size: cover;
+  margin: 40px 24px 120px;
+  border-radius: 8px;
+}
+.subscribe-first h1 {
+  font-size: 28px;
+  color: #fefcf7;
+  padding: 100px 0 24px;
+}
+
+.subscribe-first p {
+  font-family: Barlow;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  color: #fefcf7;
+  opacity: 80%;
+  padding: 0 24px 87px;
+}
+
+.subscribe-second {
+  align-items: center;
+  background-color: #2c343e;
+  color: #fff;
+  text-align: center;
+  font-family: Fraunces;
+  border-radius: 8px;
+  margin-bottom: 120px;
+}
+
+.steps {
+  margin: 0 24px;
+}
+.steps h1 {
+  color: #fdd6ba;
+  font-size: 72px;
+  font-size: 72px;
+  font-weight: 900;
+}
+.steps h2 {
+  font-size: 28px;
+  font-weight: 900;
+  padding: 24px 0;
+}
+.steps p {
+  font-family: Barlow;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  padding-bottom: 56px;
+}
+.first-step h1 {
+  padding-top: 80px;
+}
