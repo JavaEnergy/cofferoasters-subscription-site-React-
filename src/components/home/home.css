@@ -72,3 +72,61 @@
   font-size: 40px;
   margin-bottom: 13px;
 }
+
+.whyUs {
+  background-color: #2c343e;
+  text-align: center;
+  color: #fefcf7;
+  font-weight: 900;
+  font-family: "Fraunces";
+  padding: 64px 24px 328px;
+  border-radius: 8px;
+  margin: 0 24px;
+}
+.whyUs h1 {
+  font-size: 28px;
+  font-weight: 900;
+}
+.whyUs p {
+  opacity: 80%;
+  font-weight: 400;
+  line-height: 25px;
+  font-size: 15px;
+  font-family: Barlow;
+  padding: 24px 0 28px;
+}
+
+.offcard {
+  border-radius: 8px;
+  background: #0e8784;
+  text-align: center;
+  padding: 72px 33px 51px;
+  margin: 0 48px;
+  color: #fefcf7;
+}
+.offcard h1 {
+  font-family: "Fraunces";
+  font-size: 24px;
+  font-weight: 900;
+  padding: 56px 24px;
+}
+
+.offcard p {
+  font-family: Barlow;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+}
+.offerCards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: -250px;
+  margin-bottom: 120px;
+}
+
+.home-last-btn {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 120px;
+}

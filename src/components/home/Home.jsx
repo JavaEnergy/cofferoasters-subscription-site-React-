@@ -5,6 +5,10 @@ import imageEsp from "../../assets/home/desktop/image-gran-espresso.png";
 import imagePlanalto from "../../assets/home/desktop/image-planalto.png";
 import imagePicollo from "../../assets/home/desktop/image-piccollo.png";
 import imagedanche from "../../assets/home/desktop/image-danche.png";
+import coffeBean from "../../assets/home/desktop/icon-coffee-bean.svg";
+import present from "../../assets/home/desktop/icon-gift.svg";
+import truck from "../../assets/home/desktop/icon-truck.svg";
+import Steps from "../steps/Steps";
 
 function Home() {
   return (
@@ -65,6 +69,47 @@ function Home() {
           </div>{" "}
         </div>
       </section>
+      <section className="why">
+        <div className="whyUs">
+          <h1>Why choose us?</h1>
+          <p>
+            A large part of our role is choosing which particular coffees will
+            be featured in our range. This means working closely with the best
+            coffee growers to give you a more impactful experience on every
+            level.
+          </p>
+        </div>
+        <div className="offerCards">
+          <div className="offcard quality">
+            <img src={coffeBean} alt="" />
+            <h1>Best quality</h1>
+            <p>
+              Discover an endless variety of the world’s best artisan coffee
+              from each of our roasters.
+            </p>
+          </div>
+          <div className="offcard quality">
+            <img src={present} alt="" />
+            <h1>Exclusive benefits</h1>
+            <p>
+              Special offers and swag when you subscribe, including 30% off your
+              first shipment.
+            </p>
+          </div>
+          <div className="offcard quality">
+            <img src={truck} alt="" />
+            <h1>Free shipping</h1>
+            <p>
+              We cover the cost and coffee is delivered fast. Peak freshness:
+              guaranteed.
+            </p>
+          </div>
+        </div>
+      </section>
+      <Steps />
+      <div className="home-last-btn">
+        <Button />
+      </div>
     </main>
   );
 }

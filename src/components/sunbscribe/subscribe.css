@@ -63,3 +63,66 @@
 .first-step h1 {
   padding-top: 80px;
 }
+
+.navigation {
+  display: none;
+  width: 255px;
+  color: #333d4b;
+  font-family: "Fraunces";
+  font-size: 24px;
+  font-weight: 900;
+}
+.navigation p {
+  padding: 14px 0;
+  opacity: 0.8;
+}
+.navigation span {
+  color: #83888f;
+}
+
+.navigation hr {
+  opacity: 0.25;
+  background: #83888f;
+  height: 1px;
+}
+
+.carousell {
+  margin: 0 24px;
+}
+
+.carousell h2 {
+  color: #83888f;
+  font-size: 24px;
+  font-weight: 900;
+  font-family: "Fraunces";
+  line-height: 28px;
+  margin: 30px 0;
+  width: 240px;
+}
+.answer h3 {
+  color: #333d4b;
+  font-family: "Fraunces";
+  font-size: 24px;
+  font-weight: 900;
+  padding-top: 24px;
+}
+
+.answer {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+}
+
+.border {
+  border-radius: 8px;
+  background: #f4f1eb;
+  padding: 0 25px;
+}
+.answer p {
+  color: #333d4b;
+  font-family: Barlow;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+  padding: 8px 0 24px;
+}

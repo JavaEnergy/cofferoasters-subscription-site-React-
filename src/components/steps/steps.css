@@ -1,0 +1,35 @@
+.subscribe-second {
+  align-items: center;
+  background-color: #2c343e;
+  color: #fff;
+  text-align: center;
+  font-family: Fraunces;
+  border-radius: 8px;
+  margin-bottom: 120px;
+  margin: 0 24px;
+}
+
+.steps {
+  margin: 0 24px;
+}
+.steps h1 {
+  color: #fdd6ba;
+  font-size: 72px;
+  font-size: 72px;
+  font-weight: 900;
+}
+.steps h2 {
+  font-size: 28px;
+  font-weight: 900;
+  padding: 24px 0;
+}
+.steps p {
+  font-family: Barlow;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+  padding-bottom: 56px;
+}
+.first-step h1 {
+  padding-top: 80px;
+}
