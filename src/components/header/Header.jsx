@@ -27,27 +27,33 @@ const nav = (
 import "./header.css";
 import "../../reset.css";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 function Header() {
+  const [navBarVisible, setNavBarVisible] = useState(false);
+  const handleNavBarToggle = () => {
+    setNavBarVisible(!navBarVisible);
+  };
   return (
     <header className="header">
-      <img src="{logo}" alt="" />
       <div className="img">{img}</div>
-      <div className="nav" id="navBar">
+      <div className="nav" id="navBar" onClick={handleNavBarToggle}>
         {nav}
       </div>
 
-      <div className="nav-bar" id="navBarDiv">
-        <Link to="/">
-          <p>HOME</p>
-        </Link>
-        <Link to="/about">
-          <p>ABOUT US</p>
-        </Link>
-        <Link to="/createPlan">
-          <p>CREATE YOUR PLAN</p>
-        </Link>
-      </div>
+      {navBarVisible && (
+        <div className="nav-bar" id="navBarDiv">
+          <Link to="/">
+            <p>HOME</p>
+          </Link>
+          <Link to="/about">
+            <p>ABOUT US</p>
+          </Link>
+          <Link to="/createPlan">
+            <p>CREATE YOUR PLAN</p>
+          </Link>
+        </div>
+      )}
     </header>
   );
 }

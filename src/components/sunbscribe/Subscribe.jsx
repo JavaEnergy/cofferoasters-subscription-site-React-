@@ -2,6 +2,7 @@ import "./subscribe.css";
 import "../../reset.css";
 import Steps from "../steps/Steps";
 import { useState } from "react";
+import Button from "../button/Button";
 
 const Subscribe = () => {
   const [visibleQuestion, setVisibleQuestion] = useState([
@@ -65,12 +66,15 @@ const Subscribe = () => {
         </div>
       </section>
       <section className="carousell">
-        <div className="firstQuestion" onClick={() => handleQuestionClick(0)}>
+        <div
+          className="firstQuestion cursor"
+          onClick={() => handleQuestionClick(0)}
+        >
           <h2>How do you drink your coffee?</h2>
         </div>
-        <div className="firstAnswer answer">
-          {visibleQuestion[0] && (
-            <>
+        {visibleQuestion[0] && (
+          <>
+            <div className="firstAnswer answer">
               <div className="capsule border">
                 <h3>Capsule</h3>
                 <p>Compatible with Nespresso systems and similar brewers</p>
@@ -88,10 +92,13 @@ const Subscribe = () => {
                   experience
                 </p>
               </div>
-            </>
-          )}
-        </div>
-        <div className="secondQuestion" onClick={() => handleQuestionClick(1)}>
+            </div>
+          </>
+        )}
+        <div
+          className="secondQuestion cursor"
+          onClick={() => handleQuestionClick(1)}
+        >
           <h2>What type of coffee?</h2>
         </div>
         {visibleQuestion[1] && (
@@ -117,7 +124,10 @@ const Subscribe = () => {
             </div>
           </>
         )}
-        <div className="thirdQuestion" onClick={() => handleQuestionClick(2)}>
+        <div
+          className="thirdQuestion cursor"
+          onClick={() => handleQuestionClick(2)}
+        >
           <h2>How much would you like?</h2>
         </div>
         {visibleQuestion[2] && (
@@ -143,7 +153,10 @@ const Subscribe = () => {
             </div>
           </>
         )}
-        <div className="forthQuestion" onClick={() => handleQuestionClick(3)}>
+        <div
+          className="forthQuestion cursor"
+          onClick={() => handleQuestionClick(3)}
+        >
           <h2>Want us to grind them?</h2>
         </div>
         {visibleQuestion[3] && (
@@ -170,7 +183,10 @@ const Subscribe = () => {
           </>
         )}
 
-        <div className="fifthQuestion" onClick={() => handleQuestionClick(4)}>
+        <div
+          className="fifthQuestion cursor"
+          onClick={() => handleQuestionClick(4)}
+        >
           <h2>How often should we deliver?</h2>
         </div>
         {visibleQuestion[4] && (
@@ -196,6 +212,15 @@ const Subscribe = () => {
             </div>
           </>
         )}
+
+        <div className="orderSummary">
+          <h5>Order Summary</h5>
+          <h3>
+            “I drink my coffee as ..., with a ... type of bean. ... ground ala
+            ..., sent to me ....”
+          </h3>
+        </div>
+        <Button />
       </section>
     </main>
   );

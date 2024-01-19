@@ -15,8 +15,8 @@
   gap: 32px;
   z-index: 5;
   height: 100vh;
-  display: none;
 }
+
 .nav-bar a {
   text-decoration: none;
   font-family: Fraunces, sans-serif;
