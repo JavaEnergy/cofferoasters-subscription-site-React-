@@ -1,6 +1,7 @@
 import "./about.css";
 
 import ImageComm from "../../assets/about/mobile/image-commitment.jpg";
+import ImageCommTablet from "../../assets/about/tablet/image-commitment.jpg";
 
 function About() {
   return (
@@ -15,7 +16,9 @@ function About() {
         </p>
       </section>
       <section className="about-second">
-        <img src={ImageComm} alt="" />
+        <img className="mobile" src={ImageComm} alt="" />
+        <img className="tablet" src={ImageCommTablet} alt="" />
+
         <div className="text-commitment">
           <h1>Our commitment</h1>
           <p>

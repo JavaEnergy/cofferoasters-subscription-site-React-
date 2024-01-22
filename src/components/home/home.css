@@ -1,7 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500;700&family=Fraunces:opsz,wght@9..144,900&display=swap");
 
 .first {
-  background-image: url(../src/assets/home/mobile/image-hero-coffeepress.jpg);
+  background: lightgray
+    url("../src/assets/home/mobile/image-hero-coffeepress.jpg") 0px 0px / 100%
+    100% no-repeat;
+
   font-family: Fraunces;
   font-weight: 900;
   line-height: 40px;
@@ -129,4 +132,56 @@
   display: flex;
   justify-content: center;
   margin-bottom: 120px;
+}
+.last {
+  margin-bottom: 80px;
+}
+@media (min-width: 768px) {
+  .first {
+    text-align: left;
+    align-items: start;
+    padding-left: 58px;
+    background: lightgray
+      url("../src/assets/home/tablet/image-hero-coffeepress.jpg") 0px 0px / 100%
+      100% no-repeat;
+  }
+  .first h1 {
+    font-family: "Fraunces";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    width: 330px;
+    line-height: 48px; /* 100% */
+  }
+  .first p {
+    font-family: Barlow;
+    width: 390px;
+    line-height: 25px; /* 166.667% */
+    opacity: 80%;
+  }
+  .card {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+  .box-text {
+    align-items: start;
+  }
+  .box p {
+    text-align: start;
+  }
+  .whyUs h1 {
+    font-size: 32px;
+  }
+  .whyUs {
+    padding: 71px 74px 328px;
+  }
+  .whyUs p {
+    line-height: 25px; /* 166.667% */
+  }
+  .home-last-btn {
+    justify-content: flex-start;
+    margin-left: 39px;
+  }
 }

@@ -2,7 +2,7 @@
   position: absolute;
   text-align: center;
   right: 50%;
-  transform: translate(50%, 55%);
+  transform: translate(50%, 53%);
   background: linear-gradient(
     0deg,
     rgba(254, 252, 247, 0.504981) 0%,
@@ -36,7 +36,33 @@
 
 .nav {
   cursor: pointer;
+  /* display: none; */
 }
 .last-p {
   padding-bottom: 380px;
+}
+
+.horizontal-nav {
+  gap: 33px;
+  font-family: Barlow;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0.9230769276618958px;
+  display: none;
+}
+
+.horizontal-nav a {
+  text-decoration: none;
+  color: #83888f;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .nav {
+    display: none;
+  }
+  .horizontal-nav {
+    display: flex;
+  }
 }

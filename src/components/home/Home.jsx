@@ -96,17 +96,18 @@ function Home() {
               first shipment.
             </p>
           </div>
-          <div className="offcard quality">
+          <div className="offcard quality last">
             <img src={truck} alt="" />
             <h1>Free shipping</h1>
-            <p>
+            <p className="offcard-last-p">
               We cover the cost and coffee is delivered fast. Peak freshness:
               guaranteed.
             </p>
           </div>
         </div>
       </section>
-      <Steps />
+      <Steps bgColor="#FFF" color="#333D4B" />
+
       <div className="home-last-btn">
         <Button />
       </div>

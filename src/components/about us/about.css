@@ -58,3 +58,34 @@
   opacity: 80%;
   padding: 30px 0 120px;
 }
+.tablet {
+  display: none;
+}
+@media (min-width: 768px) {
+  .about-first {
+    background-image: url(../src/assets/about/tablet/image-hero-whitecup.jpg);
+    text-align: left;
+    align-items: start;
+    padding-left: 58px;
+  }
+  .about-first h1 {
+    font-size: 32px;
+  }
+  .about-first p {
+    padding-left: 0;
+    width: 450px;
+  }
+  .mobile {
+    display: none;
+  }
+  .tablet {
+    display: block;
+  }
+  .about-second {
+    display: flex;
+  }
+  .text-commitment {
+    padding: 0 40px 0 70px;
+    text-align: left;
+  }
+}

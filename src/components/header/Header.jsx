@@ -41,16 +41,28 @@ function Header() {
         {nav}
       </div>
 
+      <div className="horizontal-nav">
+        <Link to="/">
+          <p>HOME</p>
+        </Link>
+        <Link to="/about">
+          <p>ABOUT US</p>
+        </Link>
+        <Link to="/createPlan">
+          <p>CREATE YOUR PLAN</p>
+        </Link>
+      </div>
+
       {navBarVisible && (
         <div className="nav-bar" id="navBarDiv">
           <Link to="/">
-            <p>HOME</p>
+            <p onClick={handleNavBarToggle}>HOME</p>
           </Link>
           <Link to="/about">
-            <p>ABOUT US</p>
+            <p onClick={handleNavBarToggle}>ABOUT US</p>
           </Link>
           <Link to="/createPlan">
-            <p>CREATE YOUR PLAN</p>
+            <p onClick={handleNavBarToggle}>CREATE YOUR PLAN</p>
           </Link>
         </div>
       )}

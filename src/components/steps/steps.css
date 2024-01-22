@@ -30,6 +30,41 @@
   line-height: 25px;
   padding-bottom: 56px;
 }
-.first-step h1 {
-  padding-top: 80px;
+
+.container {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%; /* Set the total width */
+  margin-left: 39px;
+}
+
+.circle {
+  width: 31px;
+  height: 31px;
+  border: 2px solid #0e8784;
+  border-radius: 50%;
+}
+
+.hr {
+  border: 2px solid #fdd6ba;
+  flex-grow: 1;
+}
+
+@media (min-width: 768px) {
+  .allSteps {
+    display: flex;
+  }
+
+  .subscribe-second {
+    text-align: left;
+  }
+  .container {
+    display: flex;
+    padding-bottom: 20px;
+    padding-top: 100px;
+  }
+  .first-step h1 {
+    padding-top: 0;
+  }
 }

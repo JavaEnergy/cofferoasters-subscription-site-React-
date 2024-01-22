@@ -1,10 +1,12 @@
 import "./button.css";
 import "../../reset.css";
 
-function Button() {
+let textContent = " Create your plan";
+
+function Button({ textContent = "Create your plan" }) {
   return (
     <>
-      <button>Create your plan</button>
+      <button> {textContent}</button>
     </>
   );
 }

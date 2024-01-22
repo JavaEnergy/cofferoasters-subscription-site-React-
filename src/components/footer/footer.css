@@ -1,6 +1,7 @@
 footer {
   background: #2c343e;
   text-align: center;
+  margin: 24px;
 }
 
 .nav-bar-footer {
@@ -23,4 +24,10 @@ footer {
   display: flex;
   gap: 24px;
   justify-content: center;
+}
+@media (min-width: 768px) {
+  .nav-bar-foote {
+    flex-direction: row;
+    justify-content: center;
+  }
 }
