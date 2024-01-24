@@ -185,3 +185,29 @@
     margin-left: 39px;
   }
 }
+
+@media (min-width: 1400px) {
+  .first {
+    margin: 0 80px;
+    background: lightgray
+      url("../src/assets/home/desktop/image-hero-coffeepress.jpg") 0px 0px /
+      100% 100% no-repeat;
+  }
+  .box {
+    display: flex;
+    margin: 165px;
+    gap: 20px;
+  }
+  .card {
+    flex-direction: column;
+    width: 255px;
+    text-align: center;
+  }
+  .card p {
+    width: 255px;
+    text-align: center;
+  }
+  .box-text {
+    align-items: center;
+  }
+}

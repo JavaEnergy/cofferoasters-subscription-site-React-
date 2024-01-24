@@ -50,9 +50,9 @@ function Footer() {
         <p>CREATE YOUR PLAN</p>
       </div>
       <div className="soc-media">
-        {fb}
-        {twitter}
-        {insta}
+        <div className="fb">{fb}</div>
+        <div className="tweeter"> {twitter}</div>
+        <div className="insta"> {insta}</div>
       </div>
     </footer>
   );

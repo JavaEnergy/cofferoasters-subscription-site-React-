@@ -56,7 +56,7 @@ const Subscribe = () => {
     <main>
       {resumeVisible && (
         <>
-          <div class="backdrop"></div>
+          <div class="backdrop" onClick={resume}></div>
           <section className="orderSummary-top">
             <div className="summary-head">
               <div className="summary-head-h">
