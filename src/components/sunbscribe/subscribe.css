@@ -103,6 +103,10 @@
   padding-top: 24px;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 .answer {
   display: flex;
   gap: 24px;

@@ -17,11 +17,8 @@ const Subscribe = () => {
   const [navTextColor, setNavTextColor] = useState("#333D4B");
 
   const handleQuestionClick = (index) => {
-    setNavTextColor((prevState) =>
-      prevState === "black" ? "#333D4B" : "black"
-    );
+    setNavTextColor(index === 0 ? "black" : "#333D4B");
     setVisibleQuestion((prevState) => {
-      setBackgroundColor("black");
       const updatedState = [...prevState];
       updatedState[index] = !updatedState[index];
       return updatedState;
@@ -108,33 +105,73 @@ const Subscribe = () => {
       <section className="twosections">
         <section>
           <div className="navigation">
-            <div className="pref">
-              <p style={{ color: navTextColor }}>
-                <span>01</span> Preferences
+            <div
+              className="pref pointer"
+              onClick={() => handleQuestionClick(0)}
+            >
+              <p style={{ color: visibleQuestion[0] ? "black" : "#333D4B" }}>
+                <span
+                  style={{ color: visibleQuestion[0] ? "#0E8784" : "#333D4B" }}
+                >
+                  01
+                </span>{" "}
+                Preferences
               </p>
             </div>
             <hr />
-            <div className="type">
-              <p>
-                <span>02</span> Bean Type
+            <div
+              className="type pointer"
+              onClick={() => handleQuestionClick(1)}
+            >
+              <p style={{ color: visibleQuestion[1] ? "black" : "#333D4B" }}>
+                <span
+                  style={{ color: visibleQuestion[1] ? "#0E8784" : "#333D4B" }}
+                >
+                  02
+                </span>{" "}
+                Bean Type
               </p>
             </div>
             <hr />
-            <div className="quantity">
-              <p>
-                <span>03</span> Quantity
+            <div
+              className="quantity pointer"
+              onClick={() => handleQuestionClick(2)}
+            >
+              <p style={{ color: visibleQuestion[2] ? "black" : "#333D4B" }}>
+                <span
+                  style={{ color: visibleQuestion[2] ? "#0E8784" : "#333D4B" }}
+                >
+                  03
+                </span>{" "}
+                Quantity
               </p>
             </div>
             <hr />
-            <div className="grind">
-              <p>
-                <span>04</span> Grind Option
+            <div
+              className="grind pointer"
+              onClick={() => handleQuestionClick(3)}
+            >
+              <p style={{ color: visibleQuestion[3] ? "black" : "#333D4B" }}>
+                <span
+                  style={{ color: visibleQuestion[3] ? "#0E8784" : "#333D4B" }}
+                >
+                  04
+                </span>{" "}
+                Grind Option
               </p>
             </div>
             <hr />
-            <div className="deliveries">
-              <p>
-                <span>05</span> Deliveries
+            <div
+              className="deliveries pointer"
+              onClick={() => handleQuestionClick(4)}
+            >
+              <p style={{ color: visibleQuestion[4] ? "black" : "#333D4B" }}>
+                <span
+                  style={{ color: visibleQuestion[4] ? "#0E8784" : "#333D4B" }}
+                >
+                  05
+                </span>{" "}
+                Deliveries
               </p>
             </div>
           </div>
@@ -151,7 +188,8 @@ const Subscribe = () => {
               <div className="firstAnswer answer">
                 <div
                   className={
-                    "capsule border " + (answerOne === "Capsule" ? "color" : "")
+                    "capsule pointer border " +
+                    (answerOne === "Capsule" ? "color" : "")
                   }
                   onClick={() => getAnswerOne("Capsule")}
                 >
@@ -160,7 +198,8 @@ const Subscribe = () => {
                 </div>
                 <div
                   className={
-                    "filter border " + (answerOne === "Filter" ? "color" : "")
+                    "filter pointer border " +
+                    (answerOne === "Filter" ? "color" : "")
                   }
                   onClick={() => getAnswerOne("Filter")}
                 >
@@ -172,7 +211,7 @@ const Subscribe = () => {
                 </div>
                 <div
                   className={
-                    "espresso border " +
+                    "espresso pointer border " +
                     (answerOne === "Espresso" ? "color" : "")
                   }
                   onClick={() => getAnswerOne("Espresso")}
@@ -197,7 +236,7 @@ const Subscribe = () => {
               <div className="secondAnswer answer">
                 <div
                   className={
-                    "singleOrigin border " +
+                    "singleOrigin pointer border " +
                     (answerTwo === " Single Origin" ? "color" : "")
                   }
                   onClick={() => getAnswerTwo("Single Origin")}
@@ -207,7 +246,8 @@ const Subscribe = () => {
                 </div>
                 <div
                   className={
-                    "decaf border " + (answerTwo === "Decaf" ? "color" : "")
+                    "decaf pointer border " +
+                    (answerTwo === "Decaf" ? "color" : "")
                   }
                   onClick={() => getAnswerTwo("Decaf")}
                 >
@@ -219,7 +259,8 @@ const Subscribe = () => {
                 </div>
                 <div
                   className={
-                    "blended border " + (answerTwo === "Blended" ? "color" : "")
+                    "blended pointer border " +
+                    (answerTwo === "Blended" ? "color" : "")
                   }
                   onClick={() => getAnswerTwo("Blended")}
                 >
@@ -243,7 +284,8 @@ const Subscribe = () => {
               <div className="thirdAnswer answer">
                 <div
                   className={
-                    "250g border " + (answerThree === "250g" ? "color" : "")
+                    "250g pointer border " +
+                    (answerThree === "250g" ? "color" : "")
                   }
                   onClick={() => getAnswerThree("250g")}
                 >
@@ -252,7 +294,8 @@ const Subscribe = () => {
                 </div>
                 <div
                   className={
-                    "500g border " + (answerThree === "500g" ? "color" : "")
+                    "500g pointer border " +
+                    (answerThree === "500g" ? "color" : "")
                   }
                   onClick={() => getAnswerThree("500g")}
                 >
@@ -264,7 +307,8 @@ const Subscribe = () => {
                 </div>
                 <div
                   className={
-                    "1000g border " + (answerThree === "1000g" ? "color" : "")
+                    "1000g pointer border " +
+                    (answerThree === "1000g" ? "color" : "")
                   }
                   onClick={() => getAnswerThree("1000g")}
                 >
@@ -288,7 +332,7 @@ const Subscribe = () => {
               <div className="forthAnswer answer">
                 <div
                   className={
-                    "wholebean border " +
+                    "wholebean pointer border " +
                     (answerFour === "Wholebean" ? "color" : "")
                   }
                   onClick={() => getAnswerFour("Wholebean")}
@@ -298,7 +342,7 @@ const Subscribe = () => {
                 </div>
                 <div
                   className={
-                    "forthFilter border " +
+                    "forthFilter pointer border " +
                     (answerFour === "Filter" ? "color" : "")
                   }
                   onClick={() => getAnswerFour("Filter")}
@@ -311,7 +355,7 @@ const Subscribe = () => {
                 </div>
                 <div
                   className={
-                    "cafetiére border " +
+                    "cafetiére pointer border " +
                     (answerFour === "Cafetiére" ? "color" : "")
                   }
                   onClick={() => getAnswerFour("Cafetiére")}
@@ -337,7 +381,7 @@ const Subscribe = () => {
               <div className="fifthAnswer answer">
                 <div
                   className={
-                    "week border " +
+                    "week pointer border " +
                     (answerFive === "Every week" ? "color" : "")
                   }
                   onClick={() => getAnswerFive("Every week")}
@@ -347,7 +391,7 @@ const Subscribe = () => {
                 </div>
                 <div
                   className={
-                    "weeks border " +
+                    "weeks pointer border " +
                     (answerFive === "Every 2 weeks" ? "color" : "")
                   }
                   onClick={() => getAnswerFive("Every 2 weeks")}
@@ -360,7 +404,7 @@ const Subscribe = () => {
                 </div>
                 <div
                   className={
-                    "month border " +
+                    "month pointer border " +
                     (answerFive === "Every month" ? "color" : "")
                   }
                   onClick={() => getAnswerFive("Every month")}
