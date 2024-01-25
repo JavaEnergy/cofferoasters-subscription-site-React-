@@ -12,6 +12,14 @@
 .steps {
   margin: 0 24px;
 }
+.h1head {
+  font-family: Fraunces;
+  font-size: 24px;
+  font-weight: 900;
+  text-align: left;
+  color: #83888f;
+  padding-left: 30px;
+}
 .steps h1 {
   color: #fdd6ba;
   font-size: 72px;
@@ -57,6 +65,9 @@
 @media (min-width: 768px) {
   .allSteps {
     display: flex;
+  }
+  .allSteps {
+    text-align: left;
   }
 
   .subscribe-second {

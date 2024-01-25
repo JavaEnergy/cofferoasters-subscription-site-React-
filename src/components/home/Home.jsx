@@ -72,7 +72,7 @@ function Home() {
       <section className="why">
         <div className="whyUs">
           <h1>Why choose us?</h1>
-          <p>
+          <p className="whyP">
             A large part of our role is choosing which particular coffees will
             be featured in our range. This means working closely with the best
             coffee growers to give you a more impactful experience on every
@@ -106,7 +106,7 @@ function Home() {
           </div>
         </div>
       </section>
-      <Steps bgColor="#FFF" color="#333D4B" />
+      <Steps bgColor="#FFF" color="#333D4B" h1Text={"How it works"} />
 
       <div className="home-last-btn">
         <Button />

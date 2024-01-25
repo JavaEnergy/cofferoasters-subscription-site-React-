@@ -195,7 +195,7 @@
   }
   .box {
     display: flex;
-    margin: 165px;
+    margin: 50px 165px;
     gap: 20px;
   }
   .card {
@@ -209,5 +209,23 @@
   }
   .box-text {
     align-items: center;
+  }
+  .second h1 {
+    padding-top: 50px;
+  }
+  .whyP {
+    width: 540px;
+    margin: 0 auto;
+  }
+  .offerCards {
+    flex-direction: row;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .last {
+    margin-bottom: 0;
+  }
+  .offcard {
+    margin: 0;
   }
 }

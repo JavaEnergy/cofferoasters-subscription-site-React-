@@ -66,3 +66,9 @@
     display: flex;
   }
 }
+
+@media (min-width: 1400px) {
+  .header {
+    margin: 44px 80px;
+  }
+}

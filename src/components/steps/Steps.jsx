@@ -1,12 +1,13 @@
 import "./steps.css";
 import "../../reset.css";
 
-function Steps({ bgColor, color }) {
+function Steps({ bgColor, color, h1Text }) {
   return (
     <section
       className="subscribe-second"
       style={{ backgroundColor: bgColor, color: color }}
     >
+      <h1 className="h1head">{h1Text}</h1>
       <div class="container">
         <div class="circle"></div>
         <div class="hr"></div>

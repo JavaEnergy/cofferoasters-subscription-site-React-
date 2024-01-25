@@ -37,3 +37,12 @@ footer {
     justify-content: center;
   }
 }
+
+@media (min-width: 1400px) {
+  footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 24px 80px;
+  }
+}
