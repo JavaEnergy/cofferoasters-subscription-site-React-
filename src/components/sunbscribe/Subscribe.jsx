@@ -233,7 +233,7 @@ const Subscribe = () => {
                 <div
                   className={
                     "singleOrigin pointer border " +
-                    (answerTwo === " Single Origin" ? "color" : "")
+                    (answerTwo === "Single Origin" ? "color" : "")
                   }
                   onClick={() => getAnswerTwo("Single Origin")}
                 >
