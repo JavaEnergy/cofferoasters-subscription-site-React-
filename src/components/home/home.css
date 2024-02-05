@@ -2,7 +2,7 @@
 
 .first {
   background: lightgray
-    url("../src/assets/home/mobile/image-hero-coffeepress.jpg") 0px 0px / 100%
+    url("../../assets/home/mobile/image-hero-coffeepress.jpg") 0px 0px / 100%
     100% no-repeat;
 
   font-family: Fraunces;
@@ -142,7 +142,7 @@
     align-items: start;
     padding-left: 58px;
     background: lightgray
-      url("../src/assets/home/tablet/image-hero-coffeepress.jpg") 0px 0px / 100%
+      url("../../assets/home/tablet/image-hero-coffeepress.jpg") 0px 0px / 100%
       100% no-repeat;
   }
   .first h1 {
@@ -190,8 +190,8 @@
   .first {
     margin: 0 80px;
     background: lightgray
-      url("../src/assets/home/desktop/image-hero-coffeepress.jpg") 0px 0px /
-      100% 100% no-repeat;
+      url("../../assets/home/desktop/image-hero-coffeepress.jpg") 0px 0px / 100%
+      100% no-repeat;
   }
   .box {
     display: flex;

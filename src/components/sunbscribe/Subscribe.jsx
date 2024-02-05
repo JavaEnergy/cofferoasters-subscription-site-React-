@@ -12,12 +12,8 @@ const Subscribe = () => {
     false,
     false,
   ]);
-  const [backgroundColor, setBackgroundColor] = useState("#333D4B");
-
-  const [navTextColor, setNavTextColor] = useState("#333D4B");
 
   const handleQuestionClick = (index) => {
-    setNavTextColor(index === 0 ? "black" : "#333D4B");
     setVisibleQuestion((prevState) => {
       const updatedState = [...prevState];
       updatedState[index] = !updatedState[index];
